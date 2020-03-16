@@ -31,7 +31,7 @@ ul {
     color: white;
   }
 
-  .cyrio_navbar{
+  nav{
       width: 80%;
       height: 100px;
       min-width: 800px;
@@ -39,7 +39,7 @@ ul {
       margin: auto;
   }
 
-  .cyrio_navbar img {
+  nav img {
       height: 80px;
       margin-top: 10px;
       margin-left: 10px;
@@ -51,41 +51,70 @@ ul {
       min-width: 800px;
       height: calc(100vh - 300px);
       margin: auto;
-      background-color: red;
+/*      background-color: red; */
   }
 
   .cyrio_lastFive{
-    height: calc(100vh - 300px);
-      width: 50%;
-      float: left;
-      padding-top: 3vh;
+    height: calc(100vh - 320px);
+    width: 50%;
+    float: left;
+    padding-top: 40px;
   }
 
   .cyrio_preview{
-    height: calc(100vh - 300px);
+    height: calc(100vh - 320px);
       width: 50%;
       float: left;
   }
 
-  .cyrio_preview h1{
-    text-align: center;
+  #actualPreviewTitle{
     margin: 0;
+    text-align: center;
+    size: 24px;
     font-family: var(--main-font);
   }
 
-  .cyrio_preview img {
+  .cyrio_lastFive p{
+    float: right;
+    color: black;
+    size: 16px;
+  }
+
+  .previewImage {
       width: 100%;
+
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+  }
+         
+  @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+         
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+         
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
   }
 
-  .cyrio_footer{
-      width: 100vw;
-      height: 200px;
-      margin: 0px;
-      margin: auto;
-      background-color: var(--main-color);
+
+
+  footer{
+    width: 80%;
+    min-width: 800px;
+    height: 200px;
+    margin: auto;
+    background-color: var(--main-color);
   }
 
-  .cyrio_lastFive div {
+  #lastFiveHolder div {
       width: 90%;
       max-width: 400px;
       margin-top: 1vh;
@@ -94,8 +123,13 @@ ul {
       background-color: var(--main-color);
       text-align: center;
       line-height: 8vh;
-      font-size: 24pt;
+      font-size: 16pt;
       font-family: var(--main-font);
-      font-weight: bold;
+      
       color: white;
+  }
+
+  #lastFiveHolder div:hover{
+    cursor: pointer;
+    font-weight: bold;
   }

@@ -8,37 +8,34 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <title>Title</title>
+        <title>RE SerachView</title>
     </head>
     <body>
-        <div class="cyrio_navbar">
-            <img src="pics/logo.png">
+        <nav>
+            <a href="#"><img src="pics/logo.png"></a>
             <ul>
                 <li><a class="active" href="#">Rólam</a></li>
                 <li><a class="active" href="#">Kritikák</a></li>
                 <li><a class="active" href="#">Kutatás</a></li>
                 <li><a class="active" href="#">Kapcsolat</a></li>
             </ul>
-        </div>
-        <div class="cyrio_main">
+        </nav>
+        <section class="cyrio_main">
             <div class="cyrio_preview">
-                <h1 id="actualPreviewTitle">Jussát várja a Vaják<h1>
-                <img id="actualPreviewImage" src="pics/image_cover.jpg">
+                <h1 id="actualPreviewTitle">Jussát várja a Vaják</h1>
+                <img id="actualPreviewImage" src="pics/image_cover.jpg" class="previewImage fadeIn">
             </div>
             <div class="cyrio_lastFive">
-                <div>Jussát várja a Vaják</div>
-                <div>Jussát várja a Vaják</div>
-                <div>Jussát várja a Vaják</div>
-                <div>Jussát várja a Vaják</div>
-                <div>Jussát várja a Vaják</div>
-                <p>Több...</p>
+                <div id="lastFiveHolder"></div>
+                <a href="#"><p>Több...</p></a>
             </div>
-        </div>
+        </section>
 
-        <div class="cyrio_footer">
-        </div>
+        <footer>
+        </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+        <script src="js/script.js"></script>
     </body>
 </html>
