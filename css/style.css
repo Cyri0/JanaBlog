@@ -1,0 +1,101 @@
+:root {
+    --main-color: #313842;
+    --main-font: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+  }
+  
+  li {
+    float: left;
+    font-size: 18px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 30px;
+    line-height: 100px;
+    text-decoration: none;
+    font-family: var(--main-font);
+  }
+  
+  li a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+
+  .cyrio_navbar{
+      width: 80%;
+      height: 100px;
+      min-width: 800px;
+      background-color: var(--main-color);
+      margin: auto;
+  }
+
+  .cyrio_navbar img {
+      height: 80px;
+      margin-top: 10px;
+      margin-left: 10px;
+      float: left;
+  }
+
+  .cyrio_main{
+      width:80%;
+      min-width: 800px;
+      height: calc(100vh - 300px);
+      margin: auto;
+      background-color: red;
+  }
+
+  .cyrio_lastFive{
+    height: calc(100vh - 300px);
+      width: 50%;
+      float: left;
+      padding-top: 3vh;
+  }
+
+  .cyrio_preview{
+    height: calc(100vh - 300px);
+      width: 50%;
+      float: left;
+  }
+
+  .cyrio_preview h1{
+    text-align: center;
+    margin: 0;
+    font-family: var(--main-font);
+  }
+
+  .cyrio_preview img {
+      width: 100%;
+  }
+
+  .cyrio_footer{
+      width: 100vw;
+      height: 200px;
+      margin: 0px;
+      margin: auto;
+      background-color: var(--main-color);
+  }
+
+  .cyrio_lastFive div {
+      width: 90%;
+      max-width: 400px;
+      margin-top: 1vh;
+      margin-left: 10%;
+      height: 8vh;
+      background-color: var(--main-color);
+      text-align: center;
+      line-height: 8vh;
+      font-size: 24pt;
+      font-family: var(--main-font);
+      font-weight: bold;
+      color: white;
+  }
