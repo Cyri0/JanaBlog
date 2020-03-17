@@ -12,7 +12,9 @@
     </head>
     <body>
         <nav>
-            <a href="index.html"><img src="pics/logo.png"></a>
+            <a href="index.html">
+                <div class="nav_img light_img"></div>
+            </a>
             <ul>
                 <li><a class="active" href="about.html">Rólam</a></li>
                 <li id="dropdown">
@@ -28,12 +30,30 @@
                 <li><a class="active" href="research.html">Kutatás</a></li>
                 <li><a class="active" href="connection.html">Kapcsolat</a></li>
             </ul>
+            <div class="mobile_menu" onclick="mobile_dropdown_handler()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+                            
+            <div class="mobile_menu_dropdown" id="mobile_dropdown_menu">
+                <a href="#"><div>Rólam</div></a>
+                <a href="#"><div>Zenekritikák</div></a>
+                <a href="#"><div>Könyvelemzések</div></a>
+                <a href="#"><div>Képregénykritikák</div></a>
+                <a href="#"><div>Filmkritikák</div></a>
+                <a href="#"><div>Videojátékkritikák</div></a>
+                <a href="#"><div>Kutatás</div></a>
+                <a href="#"><div>Kapcsolat</div></a>
+            </div>
         </nav>
         <section class="cyrio_main">
             <div class="cyrio_preview">
                 
                 <div id="actualPreviewImage" class="previewImage fadeIn">
                     <h1 id="actualPreviewTitle">Jussát várja a Vaják</h1>
+                    <div id="next_butt" onclick="next_post()">❯</div>
+                    <div id="prev_butt" onclick="prev_post()">❮</div>
                 </div>
             </div>
             <div class="cyrio_lastFive">
@@ -43,6 +63,12 @@
         </section>
 
         <footer>
+            <div class="social_media">
+                <a href="#"><img src="pics/socialmedia/fb.png"></a>
+                <a href="#"><img src="pics/socialmedia/ig.png"></a>
+                <a href="#"><img src="pics/socialmedia/pinterest.png"></a>
+                <a href="#"><img src=pics/socialmedia/moly.jpg></a>
+            </div>
         </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
