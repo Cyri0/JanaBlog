@@ -225,6 +225,10 @@ ul {
     transition: all 300ms ease;
   }
 
+  #lastFiveHolder a {
+    text-decoration: none;
+  }
+
   #lastFiveHolder div:hover{
     cursor: pointer;
     font-size: 18pt;

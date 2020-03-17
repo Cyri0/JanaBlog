@@ -33,8 +33,9 @@ function init(){
     for(let i = 0; i < list.length; i++){
         let pic = list[i].pic;
         let title = list[i].title;
+        let link = list[i].url;
 
-        holder.innerHTML += '<div onmouseover="change('+i+')">'+title+'</div>';
+        holder.innerHTML += '<a href="'+link+'"><div onmouseover="change('+i+')">'+title+'</div></a>';
             if(i == 0){
                 change(0); 
             }
