@@ -7,24 +7,43 @@ class Article {
     }
 }
 
+let list = [];
+
 function init(){
-    let list = [
-        new Article("Jussát várja a Vaják","vajak.jpg"),
-        new Article("Lorem Ipsum dolor si amet","latin.jpg")
-        ];
+    list = [
+    new Article("Jussát várja a Vaják...","pics/vajak.jpg"),
+    new Article("Fush-Ro-Dah!","pics/skyrim.jpg"),
+    new Article("GTA San Anreas - A Kritika","https://toptechytips.com/wp-content/uploads/2019/10/GTA-San-Andreas-Apk-obb.jpg"),
+    new Article("Teszt","pics/latin.jpg"),
+    new Article("Teszt","pics/latin.jpg")
+    ];
 
     for(let i = 0; i < list.length; i++){
         let pic = list[i].pic;
         let title = list[i].title;
 
-        holder.innerHTML += '<div onmouseover="changeImg(\''+pic+'\')">'+title+'</div>';
+        holder.innerHTML += '<div onmouseover="change('+i+')">'+title+'</div>';
             if(i == 0){
-                changeImg(pic); 
+                change(0); 
             }
     }
 }
 
-function changeImg(pic){
+function change(id){
     let actualPic = document.getElementById("actualPreviewImage");
-    actualPic.src = "pics/" + pic;
+
+    reset_animation(actualPic);
+
+    actualPic.style.backgroundImage = "url('" + list[id].pic + "')";
+    let title = document.getElementById("actualPreviewTitle");
+    title.innerHTML = list[id].title;
+
 }
+
+function reset_animation(pic) {
+  pic.style.animation = 'none';
+  pic.offsetHeight;
+  pic.style.animation = null; 
+}
+
+init();

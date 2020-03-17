@@ -1,6 +1,12 @@
 :root {
-    --main-color: #313842;
+    --main-color: #1F2833;
     --main-font: 'Roboto', sans-serif;
+    --bg-color: #0B0C10;
+    --dropdown-color: #1F2833;
+}
+
+body {
+  background-color: var(--bg-color);
 }
 
 ul {
@@ -16,6 +22,21 @@ ul {
     font-size: 18px;
   }
   
+  #dropbtn{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 30px;
+    line-height: 100px;
+    text-decoration: none;
+    font-family: var(--main-font);
+  }
+
+  #dropbtn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
   li a {
     display: block;
     color: white;
@@ -47,46 +68,62 @@ ul {
   }
 
   .cyrio_main{
-      width:80%;
-      min-width: 800px;
-      height: calc(100vh - 300px);
-      margin: auto;
-/*      background-color: red; */
+    width:80%;
+    min-width: 800px;
+    height: calc(100vh - 220px);
+    min-height: 400px;
+    margin: auto;
   }
 
   .cyrio_lastFive{
-    height: calc(100vh - 320px);
+    height: calc(100vh - 220px);
     width: 50%;
     float: left;
     padding-top: 40px;
   }
 
   .cyrio_preview{
-    height: calc(100vh - 320px);
-      width: 50%;
-      float: left;
+    padding-top: 40px;
+    height: calc(100vh - 220px);
+    width: 50%;
+    float: left;
   }
 
   #actualPreviewTitle{
     margin: 0;
     text-align: center;
-    size: 24px;
     font-family: var(--main-font);
+    font-weight: bold;
+    line-height: 60px;
+    font-size: 32px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
   }
 
   .cyrio_lastFive p{
     float: right;
-    color: black;
-    size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    border: solid rgba(255, 255, 255, 0.8) 2px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .cyrio_lastFive p:hover {
+    color: rgba(255, 255, 255, 1.0);
+    border: solid rgba(255, 255, 255, 1.0) 2px;
   }
 
   .previewImage {
-      width: 100%;
-
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
+    margin-top: 1vh;
+    width: 100%;
+    height: calc(49vh);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
   }
          
   @-webkit-keyframes fadeIn {
@@ -104,32 +141,50 @@ ul {
     animation-name: fadeIn;
   }
 
-
-
   footer{
     width: 80%;
     min-width: 800px;
-    height: 200px;
+    height: 100px;
     margin: auto;
     background-color: var(--main-color);
   }
 
   #lastFiveHolder div {
-      width: 90%;
-      max-width: 400px;
-      margin-top: 1vh;
-      margin-left: 10%;
-      height: 8vh;
-      background-color: var(--main-color);
-      text-align: center;
-      line-height: 8vh;
-      font-size: 16pt;
-      font-family: var(--main-font);
-      
-      color: white;
+    width: 90%;
+    margin-top: 1vh;
+    margin-left: 10%;
+    height: 9vh;
+    background-color: var(--main-color);
+    text-align: center;
+    line-height: 9vh;
+    font-size: 16pt;
+    font-family: var(--main-font);  
+    color: white;
   }
 
   #lastFiveHolder div:hover{
     cursor: pointer;
     font-weight: bold;
   }
+
+  #dropdown-content {
+    background-color: var(--dropdown-color);
+    display: none;
+    position: absolute;
+  }
+
+  #dropdown-content a{
+    line-height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-style: none none none solid;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2);
+  }
+
+  #dropdown-content:first-child{
+    border-style: solid none none solid;
+    background-color: red;
+  }
+
+  #dropdown-content a:hover {text-decoration: underline;}
+
+  #dropdown:hover #dropdown-content {display: block;}
