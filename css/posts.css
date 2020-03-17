@@ -1,0 +1,88 @@
+:root{
+    --content-bg-color: rgb(201, 201, 201);
+}
+
+#posts_content{
+    width: 50%;
+    min-width: 800px;
+    margin: auto;
+}
+
+.content{
+    font-family: 'Lora', serif;
+    width: 100%;
+    height: 20vw;
+    max-height: 300px;
+    margin-top: 20px;
+    background-color: var(--content-bg-color);
+}
+
+.post_image{
+    width: 30vw;
+    height: 20vw;
+    max-height: 300px;
+    max-width: 450px;
+    background-image: url("../pics/vajak.jpg");
+    background-size: cover;
+    background-color: red;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+
+.first_few{
+    padding-right: 10px;
+}
+
+.post_title{
+   padding-top: 5vw;
+}
+
+.post_title_mobile{
+    visibility: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer{
+    padding-top: 25px;
+}
+
+@media screen and (max-width: 800px) {
+    #posts_content{
+        width: 100%;
+        min-width: auto;
+        margin: auto;
+    }
+    .content{
+        height:200px;
+        width: 300px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .post_title{
+        display: none;
+    }
+    .post_title_mobile{
+        visibility: visible;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14pt;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 0px;
+        color: white;
+    }
+
+    .post_image{
+        min-height:200px;
+        min-width: 300px;
+        position: static;
+        margin: 0px;
+    }
+
+    .first_few{
+        display: none;
+    }
+}

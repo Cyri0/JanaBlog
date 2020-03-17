@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/posts.css">
+        <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <title>RE SerachView</title>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">
+                <div class="nav_img light_img"></div>
+            </a>
+            <ul>
+                <li><a class="active" href="about.html">Rólam</a></li>
+                <li id="dropdown">
+                    <div id="dropbtn">Kritikák</div>
+                    <div id="dropdown-content">
+                        <a href="posts.html?type=music">Zenék</a>
+                        <a href="posts.html?type=book">Könyvek</a>
+                        <a href="posts.html?type=comic">Képregények</a>
+                        <a href="posts.html?type=movie">Filmek</a>
+                        <a href="posts.html?type=game">Videojátékok</a>
+                    </div>
+                </li>
+                <li><a class="active" href="research.html">Kutatás</a></li>
+                <li><a class="active" href="connection.html">Kapcsolat</a></li>
+            </ul>
+            <div class="mobile_menu" onclick="mobile_dropdown_handler()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+                            
+            <div class="mobile_menu_dropdown" id="mobile_dropdown_menu">
+                <a href="about.html"><div>Rólam</div></a>
+                <a href="posts.html?type=music"><div>Zenekritikák</div></a>
+                <a href="posts.html?type=book"><div>Könyvelemzések</div></a>
+                <a href="posts.html?type=comic"><div>Képregénykritikák</div></a>
+                <a href="posts.html?type=movie"><div>Filmkritikák</div></a>
+                <a href="posts.html?type=game"><div>Játékkritikák</div></a>
+                <a href="research.html"><div>Kutatás</div></a>
+                <a href="connection.html"><div>Kapcsolat</div></a>
+            </div>
+        </nav>
+
+        <section id="posts_content">
+            <div class="content">
+                <a id="post_link" href="article.html?id=1">
+                    <div class="post_image">
+                        <h1 class="post_title_mobile">Jussát várja a Vaják...</h1>
+                    </div>
+                </a>
+                <h1 class="post_title">Jussát várja a Vaják...</h1>
+
+                <p class="first_few">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu ante ut urna gravida maximus...</p>
+            </div>
+            <div class="content">
+                <a id="post_link" href="#">
+                    <div class="post_image">
+                        <h1 class="post_title_mobile">Jussát várja a Vaják...</h1>
+                    </div>
+                </a>
+                <h1 class="post_title">Jussát várja a Vaják...</h1>
+                <p class="first_few">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu ante ut urna gravida maximus...</p>
+            </div>
+
+        </section>
+        <footer>
+            <div class="social_media">
+                <a href="#"><img src="pics/socialmedia/fb.png"></a>
+                <a href="#"><img src="pics/socialmedia/ig.png"></a>
+                <a href="#"><img src="pics/socialmedia/pinterest.png"></a>
+                <a href="#"><img src=pics/socialmedia/moly.jpg></a>
+            </div>
+        </footer>
+ 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

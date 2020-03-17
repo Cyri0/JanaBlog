@@ -1,4 +1,0 @@
-
-function researchClicked(){
-    alert("Megnyomtál!");
-}

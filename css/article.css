@@ -7,6 +7,7 @@
     font-size: 14pt;
     width: 100%;
     margin:auto;
+    margin-top: 10px;
     background-color: var(--article-bg-color);
     padding-bottom: 100px;
     border-bottom: 10px solid var(--article-bg-color);
@@ -73,5 +74,9 @@
 @media screen and (max-width: 800px) {
     .article_main {
         width:95%;
+    }
+
+    .article_main_div h1{
+        font-size: 45px;
     }
 }
