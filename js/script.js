@@ -1,22 +1,34 @@
 let holder = document.getElementById("lastFiveHolder");
 
 class Article {
-    constructor(title, pic){
+    constructor(id, title, pic){
         this.title = title;
         this.pic = pic;
+        this.id = id;
+        this.url = this.makeLink();
+    }
+    makeLink(){
+        return "article.html?post_id=" + this.id;
     }
 }
 
 let list = [];
 
-function init(){
-    list = [
-        new Article("Jussát várja a Vaják...","pics/vajak.jpg"),
-        new Article("Fush-Ro-Dah!","pics/skyrim.jpg"),
-        new Article("GTA San Andreas - A Kritika","https://toptechytips.com/wp-content/uploads/2019/10/GTA-San-Andreas-Apk-obb.jpg"),
-        new Article("Teszt","pics/latin.jpg"),
-        new Article("Teszt","pics/latin.jpg")
+function initList(){
+    let li = [
+        new Article(1, "Jussát várja a Vaják...","pics/vajak.jpg"),
+        new Article(2, "Fush-Ro-Dah!","pics/skyrim.jpg"),
+        new Article(3, "GTA San Andreas - A Kritika","https://toptechytips.com/wp-content/uploads/2019/10/GTA-San-Andreas-Apk-obb.jpg"),
+        new Article(4, "Teszt","pics/latin.jpg"),
+        new Article(5, "Teszt","pics/latin.jpg")
     ];
+
+    return li;
+}
+
+function init(){
+
+    list = initList();
 
     for(let i = 0; i < list.length; i++){
         let pic = list[i].pic;
@@ -38,6 +50,8 @@ function change(id){
     let title = document.getElementById("actualPreviewTitle");
     title.innerHTML = list[id].title;
 
+    let link = document.getElementById("image_link");
+    link.href = list[id].url;
 }
 
 function reset_animation(pic) {

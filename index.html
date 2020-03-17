@@ -20,11 +20,11 @@
                 <li id="dropdown">
                     <div id="dropbtn">Kritikák</div>
                     <div id="dropdown-content">
-                        <a href="#">Zenék</a>
-                        <a href="#">Könyvek</a>
-                        <a href="#">Képregények</a>
-                        <a href="#">Filmek</a>
-                        <a href="#">Videojátékok</a>
+                        <a href="posts.html?type=music">Zenék</a>
+                        <a href="posts.html?type=book">Könyvek</a>
+                        <a href="posts.html?type=comic">Képregények</a>
+                        <a href="posts.html?type=movie">Filmek</a>
+                        <a href="posts.html?type=game">Videojátékok</a>
                     </div>
                 </li>
                 <li><a class="active" href="research.html">Kutatás</a></li>
@@ -37,28 +37,30 @@
             </div>
                             
             <div class="mobile_menu_dropdown" id="mobile_dropdown_menu">
-                <a href="#"><div>Rólam</div></a>
-                <a href="#"><div>Zenekritikák</div></a>
-                <a href="#"><div>Könyvelemzések</div></a>
-                <a href="#"><div>Képregénykritikák</div></a>
-                <a href="#"><div>Filmkritikák</div></a>
-                <a href="#"><div>Videojátékkritikák</div></a>
-                <a href="#"><div>Kutatás</div></a>
-                <a href="#"><div>Kapcsolat</div></a>
+                <a href="about.html"><div>Rólam</div></a>
+                <a href="posts.html?type=music"><div>Zenekritikák</div></a>
+                <a href="posts.html?type=book"><div>Könyvelemzések</div></a>
+                <a href="posts.html?type=comic"><div>Képregénykritikák</div></a>
+                <a href="posts.html?type=movie"><div>Filmkritikák</div></a>
+                <a href="posts.html?type=game"><div>Játékkritikák</div></a>
+                <a href="research.html"><div>Kutatás</div></a>
+                <a href="connection.html"><div>Kapcsolat</div></a>
             </div>
         </nav>
         <section class="cyrio_main">
-            <div class="cyrio_preview">
-                
+            <div class="cyrio_preview">  
                 <div id="actualPreviewImage" class="previewImage fadeIn">
-                    <h1 id="actualPreviewTitle">Jussát várja a Vaják</h1>
+                    <a id="image_link" href="#">
+                        <h1 id="actualPreviewTitle">Jussát várja a Vaják</h1>
+                    </a>
                     <div id="next_butt" onclick="next_post()">❯</div>
                     <div id="prev_butt" onclick="prev_post()">❮</div>
                 </div>
+                </a>
             </div>
             <div class="cyrio_lastFive">
                 <div id="lastFiveHolder"></div>
-                <a href="#"><p>Több...</p></a>
+                <a href="posts.html?type=all"><p>Több...</p></a>
             </div>
         </section>
 
