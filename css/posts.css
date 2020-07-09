@@ -35,7 +35,14 @@
 }
 
 .post_title{
-   padding-top: 5vw;
+   padding-top: 10px;
+}
+
+.post_date{
+    font-size: 10px;
+    padding-top: 5px;
+    text-align: right;
+    margin-right: 10px;
 }
 
 .post_title_mobile{
@@ -61,6 +68,9 @@ footer{
         margin-bottom: 20px;
     }
     .post_title{
+        display: none;
+    }
+    .post_date{
         display: none;
     }
     .post_title_mobile{
